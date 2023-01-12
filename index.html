@@ -28,12 +28,27 @@
 		}
 		
 		.justwidget .justwidget--headline h2 {
-			white-space: nowrap !important;
+			white-space: normal !important;
+		}
+		
+		.justwidget--message_user .justwidget--image {
+    		background-image: url('https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png') !important;
+		}
+		
+		.justwidget--message_user .justwidget--image svg {
+    		display: none;
 		}
 	</style>
   </head>
   <body>
     <div id="widgetContainer"></div>
     <script src="https://bot.jaicp.com/chatwidget/GQCQCvUg:1304ec62bd4f325aece898fa90d90044ae1890af/justwidget.js?force=true" async></script>
+	<script>
+		window.JustWidgetSendRawData = function() {
+    return {
+      currentUrl: window.location.href
+    };
+  };
+	</script>
   </body>
 </html>
